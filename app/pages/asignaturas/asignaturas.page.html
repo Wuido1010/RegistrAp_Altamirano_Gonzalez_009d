@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="secondary">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>asignaturas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-img src="assets/logo.jpg" class="imagen"></ion-img>
+  
+  <p id="asignatur">Seleccione la asignatura </p>
+  
+  <ion-item button (click)="buttonClick()" routerLink="/asignatura-selec">
+    <ion-label >
+      Arquitectura de software
+    </ion-label>
+  </ion-item>
+  <ion-item button (click)="buttonClick()"routerLink="/asignatura-selec">
+    <ion-label>
+      Programacion de base de datos
+    </ion-label>
+  </ion-item>
+  <ion-item button (click)="buttonClick()"routerLink="/asignatura-selec">
+    <ion-label>
+      Calidad de software
+    </ion-label>
+  </ion-item>
+  <ion-item button (click)="buttonClick()"routerLink="/asignatura-selec">
+    <ion-label>
+      Portafolio
+    </ion-label>
+  </ion-item>
+  
+</ion-content>
